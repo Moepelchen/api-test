@@ -4,7 +4,8 @@
   "description": "This is the readme",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "start": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",
