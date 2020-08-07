@@ -4,8 +4,8 @@
   "description": "This is the readme",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
-    "start": "node ./dist/server.js"
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon -x ts-node src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,20 @@
   },
   "homepage": "https://github.com/Moepelchen/api-test#readme",
   "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
     "tsc-watch": "^4.2.9",
     "typescript": "^3.9.7"
+  },
+  "compilerOptions" : {
+    "include" : [
+      "src/**/*.ts"
+    ],
+    "exclude" : [
+      "node_modules"
+    ]
   }
 }
