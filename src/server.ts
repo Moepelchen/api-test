@@ -4,7 +4,7 @@ var app = express();
 var port = process.env.PORT || 8888;
 console.log(process.env.PORT);
 app.listen(port, () => {
-    console.log("Server running on port 3000");
+    console.log("Server running on port " + port);
 });
 app.use(bodyParser)
 app.get("/okta", (req, res, next) => {
