@@ -1,7 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 var app = express();
-app.listen(80, () => {
+var port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log("Server running on port 3000");
 });
 app.use(bodyParser)
