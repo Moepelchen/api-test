@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 var app = express();
 var port = process.env.PORT || 8888;
+console.log(process.env.PORT);
 app.listen(port, () => {
     console.log("Server running on port 3000");
 });
