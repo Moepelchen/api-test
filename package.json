@@ -1,0 +1,24 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "This is the readme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moepelchen/api-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moepelchen/api-test/issues"
+  },
+  "homepage": "https://github.com/Moepelchen/api-test#readme",
+  "dependencies": {
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  }
+}
